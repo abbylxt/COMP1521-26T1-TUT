@@ -15,8 +15,10 @@ int main(int argc, char *argv[]) {
         return 0;
 }
 
+// using recursion
 int sum_recursive(int n) {
     if (n == 1) {
+        // stopping condition (what is the end case)
         return 1;
     }
     return n + sum_recursive(n - 1);
